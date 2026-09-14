@@ -1,0 +1,176 @@
+# Environment variables
+.env
+.env.local
+
+# Dependencies
+node_modules/
+venv/
+__pycache__/
+*.pyc
+.Python
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+
+# Uploads
+uploads/
+*.tmp
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Database
+*.db
+*.sqlite
+
+# Testing
+coverage/
+.pytest_cache/
+# ==========================================
+# MERN + AI/ML Project .gitignore
+# ==========================================
+
+# ---------- Environment Variables ----------
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# ---------- Node.js ----------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------- Build / Distribution ----------
+dist/
+build/
+.next/
+out/
+coverage/
+
+# ---------- React / Vite ----------
+.vite/
+.cache/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python virtual environments
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ---------- Python Packaging ----------
+*.egg
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+wheels/
+MANIFEST
+
+# ---------- ML / AI ----------
+# Jupyter
+.ipynb_checkpoints/
+
+# ML experiment / cache files
+mlruns/
+wandb/
+runs/
+
+# Model files - usually too large for Git
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.keras
+*.onnx
+*.pkl
+*.pickle
+*.joblib
+*.safetensors
+*.bin
+
+# Hugging Face / Transformers cache
+.cache/
+huggingface_cache/
+transformers_cache/
+
+# ---------- Data ----------
+# Ignore datasets by default
+data/
+datasets/
+*.csv
+*.tsv
+*.jsonl
+*.parquet
+
+# If you have small JSON configuration files,
+# explicitly force-add them with:
+# git add -f path/to/file.json
+
+# ---------- Logs ----------
+logs/
+*.log
+
+# ---------- OS Files ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- IDE / Editors ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Keep VS Code settings if desired:
+# !.vscode/settings.json
+
+# ---------- Temporary Files ----------
+tmp/
+temp/
+*.tmp
+*.temp
+
+# ---------- Database ----------
+# Local MongoDB data
+mongodb/
+mongo-data/
+data/db/
+
+# ---------- Testing ----------
+coverage/
+.nyc_output/
+
+# ---------- TypeScript ----------
+*.tsbuildinfo
+
+# ---------- ESLint ----------
+.eslintcache
+
+# ---------- Misc ----------
+*.local
+*.secret
+*.pem
