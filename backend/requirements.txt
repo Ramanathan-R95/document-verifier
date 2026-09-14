@@ -1,0 +1,2 @@
+# Python service requirements (call these from Node.js)
+# These will be moved to ai/requirements.txt
