@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: sih-mongodb
+    ports:
+      - '27017:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_DATABASE: sih_documents
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - sih-network
+
+volumes:
+  mongodb_data:
+
+networks:
+  sih-network:
+    driver: bridge
