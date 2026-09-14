@@ -1,0 +1,63 @@
+{
+  "documentRules": {
+    "passport": {
+      "requiredFields": ["name", "passportNumber", "nationality", "dateOfBirth", "gender", "expiryDate"],
+      "patterns": {
+        "passportNumber": "^[A-Z0-9]{6,9}$",
+        "dateOfBirth": "^\\d{4}-\\d{2}-\\d{2}$",
+        "expiryDate": "^\\d{4}-\\d{2}-\\d{2}$"
+      },
+      "checks": [
+        "requiredFieldsPresent",
+        "dateFormatValid",
+        "documentNotExpired",
+        "dateOfBirthBeforeIssueDate"
+      ]
+    },
+    "visa": {
+      "requiredFields": ["visaNumber", "visaType", "entryValidity", "stayDuration", "issueDate", "expiryDate"],
+      "patterns": {
+        "visaNumber": "^[A-Z0-9]{6,12}$"
+      },
+      "checks": [
+        "requiredFieldsPresent",
+        "visaNotExpired",
+        "stayDurationReasonable",
+        "issueDateBeforeExpiryDate"
+      ]
+    },
+    "national_id": {
+      "requiredFields": ["fullName", "idNumber", "dateOfBirth", "issueDate", "expiryDate"],
+      "patterns": {
+        "idNumber": "^[A-Z0-9]{6,20}$"
+      },
+      "checks": [
+        "requiredFieldsPresent",
+        "dateFormatValid",
+        "documentNotExpired"
+      ]
+    },
+    "driving_license": {
+      "requiredFields": ["fullName", "licenseNumber", "dateOfBirth", "issueDate", "expiryDate"],
+      "patterns": {
+        "licenseNumber": "^[A-Z0-9]{6,20}$"
+      },
+      "checks": [
+        "requiredFieldsPresent",
+        "dateFormatValid",
+        "documentNotExpired"
+      ]
+    },
+    "permit": {
+      "requiredFields": ["holderName", "permitNumber", "permitType", "issueDate", "expiryDate"],
+      "patterns": {
+        "permitNumber": "^[A-Z0-9]{6,20}$"
+      },
+      "checks": [
+        "requiredFieldsPresent",
+        "dateFormatValid",
+        "documentNotExpired"
+      ]
+    }
+  }
+}

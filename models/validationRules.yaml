@@ -1,0 +1,20 @@
+version: 1
+rules:
+  # These are placeholder validation rules
+  # Will be expanded based on document types
+  
+  passport:
+    - field: expiryDate
+      rule: document_not_expired
+      severity: error
+    - field: passportNumber
+      rule: valid_format
+      severity: error
+    
+  visa:
+    - field: expiryDate
+      rule: visa_not_expired
+      severity: error
+    - field: stayDuration
+      rule: reasonable_duration
+      severity: warning
