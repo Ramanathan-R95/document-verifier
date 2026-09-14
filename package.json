@@ -1,25 +1,20 @@
 {
-  "name": "document-screening-backend",
+  "name": "document-screening-frontend",
   "version": "1.0.0",
-  "description": "Backend API for AI-powered document screening",
-  "main": "src/server.js",
+  "description": "Frontend for AI-powered document screening",
+  "type": "module",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js",
-    "test": "jest --runInBand"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "axios": "^1.5.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "express-rate-limit": "^7.4.1",
-    "mongoose": "^7.5.0",
-    "multer": "^1.4.5-lts.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "axios": "^1.5.0"
   },
   "devDependencies": {
-    "jest": "^29.7.0",
-    "nodemon": "^3.0.1",
-    "supertest": "^7.1.0"
+    "@vitejs/plugin-react": "^4.1.0",
+    "vite": "^5.0.0"
   }
 }
